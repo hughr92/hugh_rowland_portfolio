@@ -1,0 +1,27 @@
+.footer {
+    background-color: $primaryColor;
+    padding: 20px 0;
+    &__links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &__item {
+            background-color: $darkGrey;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            padding: 5px;
+            margin: 0 10px;
+            font-size: 2rem;
+            color: white;
+            &:hover {
+                color: $primaryColor;
+                background-color: $primaryColorLight;
+            }
+        }
+    }
+}

@@ -1,0 +1,136 @@
+html {
+    font-size: 62.25%;
+    font-family: 'Roboto Condensed', sans-serif;
+    & p {
+        font-family: 'Roboto', sans-serif;
+
+    }
+}
+
+// COLORS
+
+$logo: white;
+
+$darkGrey: #58585b;
+$mediumGrey: #d1d2d4;
+$lightGrey: #f1f1f2;
+
+$primaryColor: #00a79d;
+$primaryColorLight: #c5e7e6;
+
+// WRAPPER
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 40px;
+    margin: 0 auto;
+    &--portfolio {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+
+    }
+}
+
+// %absolute {
+//     position: absolute;
+//     transform: translate(-50% -50%);
+// }
+
+//SECTIONS
+.section {
+    padding: 50px 0;
+    &__header {
+        text-align: center;
+        padding: 20px 0 40px;
+        font-size: 4rem;
+        text-transform: uppercase;
+        margin: 0;
+        &--portfolio {
+            padding: 40px 0 0px;
+            background-color: white;
+        }
+    }
+}
+
+// TEXT STYLES
+%sectionHeader {
+    // INSERT STYLES
+}
+
+%navLink {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+%heroHeader {
+    background-color: white;
+    color: black;
+    font-size: 4rem;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+}
+
+%subSectionHeader {
+    // INSERT STYLES
+    color: $darkGrey;
+    background-color: $lightGrey;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+%portfolioHeader {
+    // INSERT STYLES
+    font-size: 2.4rem;
+    width: 100%;
+    color: $primaryColor;
+    text-transform: uppercase;
+}
+
+%portfolioButton {
+    background: $primaryColor;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    transition: 0.3s;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    &:hover {
+        background: $primaryColorLight;
+    }
+    &:nth-of-type(2n){
+        background-color: $darkGrey;
+        &:hover {
+            background-color: $mediumGrey;
+        }
+    }
+}
+
+@media (max-width:450px){
+    .wrapper {
+        padding: 0 20px;
+    }
+    .section {
+    padding: 30px 0;
+    &__header {
+        text-align: center;
+        padding: 10px 0 30px;
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin: 0;
+        &--portfolio {
+            padding: 30px 0 0px;
+            background-color: white;
+        }
+    }
+}
+}
+
+

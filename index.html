@@ -4,11 +4,460 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- DEVICON -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700" rel="stylesheet">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="src/assets/loadingPage/logo-fav-2.png">
+    <!-- STYLE -->
     <link rel="stylesheet" href="public/styles/style.css">
-    <title>Document</title>
+    <title>Hugh Rowland</title>
 </head>
 <body>
-    <h1>Neat</h1>
+    <div class="loader">
+        <div class="wrapper">
+            <div class="loader__animation">
+                <!-- cirlce -->
+                <div class="loader__animation__circle1"></div>
+                <div class="loader__animation__logo">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path fill="white" d="M431,433.1l-80.9-170.5c37.8-10.2,56.7-31.4,56.7-63.7V144c0-51.3-32-77-95.9-77.1h-35h-69.8h-2.2v144.2
+                    			h69.8v-92.1h4.4h9.2h16.3c20.9,0,31.3,8.3,31.3,25V199c0,11.7-6.5,19.5-19.6,23.3c-3.7,1-10.6,1.5-20.6,1.5h-7.4h-13.6H141v-157
+                    			H69v366.3h72v-157h58.1h4.7h69.8h15.2l63.2,157H431z" />
+                            </g>
+                            <g>
+                                <rect x="203.9" y="288.9" fill="white" width="69.8" height="144.2" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER -->
+    <header class="header">
+        <!-- <div class="header__fold header__fold1">
+
+        </div>
+        <div class="header__fold header__fold2">
+            
+        </div>
+        <div class="header__fold header__fold3">
+            
+        </div>
+        <div class="header__fold header__fold4">
+            
+        </div> -->
+        
+        
+        <nav class="header__nav">
+            <ul class="wrapper header__nav__container">
+                <div class="header__nav__logo">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path fill="#00A79D" d="M431,433.1l-80.9-170.5c37.8-10.2,56.7-31.4,56.7-63.7V144c0-51.3-32-77-95.9-77.1h-35h-69.8h-2.2v144.2
+                                h69.8v-92.1h4.4h9.2h16.3c20.9,0,31.3,8.3,31.3,25V199c0,11.7-6.5,19.5-19.6,23.3c-3.7,1-10.6,1.5-20.6,1.5h-7.4h-13.6H141v-157
+                                H69v366.3h72v-157h58.1h4.7h69.8h15.2l63.2,157H431z" />
+                            </g>
+                            <g>
+                                <rect x="203.9" y="288.9" fill="#00A79D" width="69.8" height="144.2" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <li><a href="#" class="header__nav__link">About</a></li>
+                <li><a href="#" class="header__nav__link">Portfolio</a></li>
+                <li><a href="#" class="header__nav__link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+            <div class="header__hero">
+                <h2 class="header__hero__header"><span>Hugh Rowland</span></h2>
+                <h2 class="header__hero__header header__hero__header--black"><span>Front End Developer</span></h2>
+            </div>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- ABOUT -->
+        <section class="section about">
+            <div class="wrapper">
+                <h2 class="section__header">About</h2>
+                <p class="about__text">I am a Web Developer based in Toronto, fresh out of HackerYou, Canada’s original programming bootcamp and now career college.
+                While I was there, I learned multiple programming languages including HTML5, CSS3, Sass, JavaScript, jQuery, Firebase and
+                React.js.
+                </p>
+            </div>
+        </section>
+        <div class="wrapper--portfolio">
+            <h2 class="section__header section__header--portfolio">Portfolio</h2>
+            <!-- PORTFOLIO PIECE -->
+            <section class="portfolio portfolio1">
+                <!-- PORTFOLIO IMAGE -->
+                <div class="portfolio__half">
+                    <div class="portfolio__slider">
+                        <figure>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/splash/splashpad1.png" alt="">
+                                
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/splash/splashpad2.png" alt="">
+                                
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/splash/splashpad3.png" alt="">
+                                
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/splash/splashpad4.png" alt="">
+                                
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/splash/splashpad5.png" alt="">
+                                
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <!-- PORTFOLIO INFORMATION -->
+                <div class="portfolio__half portfolio__half--text">
+                    <!-- PORTFOLIO HEADER -->
+                    <h3 class="portfolio__header">Splash Pad</h3>
+                    <!-- PORTFOLIO TEXT -->
+                    <p class="portfolio__text">
+                        A generator that returns a live view, as well as the HTML and CSS to make your own splash page.
+                    </p>
+                    <p class="portfolio__text portfolio__text--team">
+                        <span>Team:</span> Bill, Cynthia, Dianna, Hugh
+                    </p>
+                    <!-- PORTFOLIO ICONS -->
+                    <div class="portfolio__icon">
+                        <i class="portfolio__icon__item devicon-react-original"></i>
+                        <!-- firebase -->
+                        <img class="portfolio__icon__item--image" src="src/assets/icon-firebase-color.svg" alt="">
+                        <i class="portfolio__icon__item devicon-sass-original"></i>
+                        <i class="portfolio__icon__item devicon-github-plain"></i>
+                    </div>
+                    <!-- PORTFOLIO BUTTON -->
+                    <div class="portfolio__viewButton__container">
+                        <a target="_blank" href="https://project-six-c0a75.firebaseapp.com/home" class="portfolio__viewButton">view live</a>
+                        <a target="_blank" href="https://github.com/happyCampers/bill-cynthia-dianna-hugh-project-six" class="portfolio__viewButton">view repo</a>
+                    </div>
+                </div>
+            </section>
+            <!-- PORTFOLIO PIECE INITITDATE -->
+            <section class="portfolio portfolio2">
+                <!-- PORTFOLIO IMAGE -->
+                <div class="portfolio__half">
+                    <div class="portfolio__slider">
+                        <figure>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/movie/movie1.png" alt="">
+                    
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/movie/movie2.png" alt="">
+                    
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/movie/movie3.png" alt="">
+                    
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/movie/movie4.png" alt="">
+                    
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/movie/movie5.png" alt="">
+                    
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <!-- PORTFOLIO INFORMATION -->
+                <div class="portfolio__half portfolio__half--text">
+                    <!-- PORTFOLIO HEADER -->
+                    <h3 class="portfolio__header portfolio__header">Initidate</h3>
+                    <!-- PORTFOLIO TEXT -->
+                    <p class="portfolio__text">
+                        A step by step date generator that uses the MovieDB and Cocktail DB Apis to generate a filtered movie and drink recommendation.
+                    </p>
+                    <!-- TEAM -->
+                    <p class="portfolio__text portfolio__text--team">
+                        <span>Team:</span> Shangni Hugh
+                    </p>
+                    <!-- PORTFOLIO ICONS -->
+                    <div class="portfolio__icon">
+                        <i class="portfolio__icon__item devicon-html5-plain"></i>
+                        <i class="portfolio__icon__item devicon-sass-original"></i>
+                        <i class="portfolio__icon__item devicon-javascript-plain"></i>
+                        <i class="portfolio__icon__item devicon-jquery-plain"></i>
+                    </div>
+                    <!-- PORTFOLIO BUTTON -->
+                    <div class="portfolio__viewButton__container">
+                        <a target="_blank" href="https://hugh-shangni.github.io/project-4/" class="portfolio__viewButton">view live</a>
+                        <a target="_blank" href="https://github.com/hughr92/project-4" class="portfolio__viewButton">view repo</a>
+                    </div>
+                </div>
+                
+            </section>
+            <!-- PORTFOLIO PIECE CORPORTATE -->
+            <section class="portfolio portfolio3">
+                <!-- PORTFOLIO IMAGE -->
+                <div class="portfolio__half">
+                    <div class="portfolio__slider">
+                        <figure>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/corp/corp1.png" alt="">
+                    
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/corp/corp2.png" alt="">
+                    
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/corp/corp3.png" alt="">
+                    
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/corp/corp4.png" alt="">
+                    
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/corp/corp5.png" alt="">
+                    
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <!-- PORTFOLIO INFORMATION -->
+                <div class="portfolio__half portfolio__half--text">
+                    <!-- PORTFOLIO HEADER -->
+                    <h3 class="portfolio__header">Corporate site</h3>
+                    <!-- PORTFOLIO TEXT -->
+                    <p class="portfolio__text">
+                        project 2 - say things here.... lel
+                    </p>
+                    <!-- PORTFOLIO ICONS -->
+                    <div class="portfolio__icon">
+                        <i class="portfolio__icon__item devicon-html5-plain"></i>
+                        <i class="portfolio__icon__item devicon-sass-original"></i>
+                        <i class="portfolio__icon__item devicon-javascript-plain"></i>
+                        <i class="portfolio__icon__item devicon-jquery-plain"></i>
+                    </div>
+                    <!-- PORTFOLIO BUTTON -->
+                    <div class="portfolio__viewButton__container">
+                        <a target="_blank" href="https://hughr92.github.io/hugh--Rowland__Project--2/" class="portfolio__viewButton">view live</a>
+                        <a target="_blank" href="https://github.com/hughr92/hugh--Rowland__Project--2" class="portfolio__viewButton">view repo</a>
+                    </div>
+                </div>
+            </section>
+            <!-- PORTFOLIO PIECE CUBE -->
+            <section class="portfolio portfolio4">
+                <!-- PORTFOLIO IMAGE -->
+                <div class="portfolio__half">
+                    <div class="portfolio__slider">
+                        <figure>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/cube/cube1.png" alt="">
+                    
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/cube/cube2.png" alt="">
+                    
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/cube/cube3.png" alt="">
+                    
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/cube/cube4.png" alt="">
+                    
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/cube/cube5.png" alt="">
+                    
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <!-- PORTFOLIO INFORMATION -->
+                <div class="portfolio__half portfolio__half--text">
+                    <!-- PORTFOLIO HEADER -->
+                    <h3 class="portfolio__header portfolio__header">Cube 64</h3>
+                    <!-- PORTFOLIO TEXT -->
+                    <p class="portfolio__text">
+                        Visually connect four on any of the five surfaces to win! Complicated to play, frustrating to make, but worth it.
+                    </p>
+                    <!-- PORTFOLIO ICONS -->
+                    <div class="portfolio__icon">
+                        <i class="portfolio__icon__item devicon-html5-plain"></i>
+                        <i class="portfolio__icon__item devicon-sass-original"></i>
+                        <i class="portfolio__icon__item devicon-javascript-plain"></i>
+                        <i class="portfolio__icon__item devicon-jquery-plain"></i>
+                    </div>
+                    <!-- PORTFOLIO BUTTON -->
+                    <div class="portfolio__viewButton__container">
+                        <a target="_blank" href="https://hughr92.github.io/hugh_rowland-project3/" class="portfolio__viewButton">view live</a>
+                        <a target="_blank" href="https://github.com/hughr92/hugh_rowland-project3/settings" class="portfolio__viewButton">view repo</a>
+                    </div>
+                </div>
+            </section>
+            <!-- PORTFOLIO PIECE RICKITY -->
+            <section class="portfolio portfolio5">
+                <!-- PORTFOLIO IMAGE -->
+                <div class="portfolio__half">
+                    <div class="portfolio__slider">
+                        <figure>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/rickity/rickity1.png" alt="">
+                    
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/rickity/rickity2.png" alt="">
+                    
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/rickity/rickity3.png" alt="">
+                    
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/rickity/rickity4.png" alt="">
+                    
+                            </div>
+                            <div class="portfolio__slider__slide">
+                                <img src="src/assets/rickity/rickity5.png" alt="">
+                    
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <!-- PORTFOLIO INFORMATION -->
+                <div class="portfolio__half portfolio__half--text">
+                    <!-- PORTFOLIO HEADER -->
+                    <h3 class="portfolio__header portfolio__header">Rickity Ship</h3>
+                    <!-- PORTFOLIO TEXT -->
+                    <p class="portfolio__text">
+                        Pretty much Flappy Bird with lives, points and most importantly... a finish line!
+                        Created during HackerYou's part time JavaScript program, pre name-spacing, full-time spaghetti coding.
+                    </p>
+                    <!-- PORTFOLIO ICONS -->
+                    <div class="portfolio__icon">
+                        <i class="portfolio__icon__item devicon-html5-plain"></i>
+                        <i class="portfolio__icon__item devicon-css3-plain"></i>
+                        <i class="portfolio__icon__item devicon-javascript-plain"></i>
+                        <i class="portfolio__icon__item devicon-jquery-plain"></i>
+                    </div>
+                    <!-- PORTFOLIO BUTTON -->
+                    <div class="portfolio__viewButton__container">
+                        <a target="_blank" href="https://hughr92.github.io/hugh_game/" class="portfolio__viewButton">view live</a>
+                        <a target="_blank" href="https://github.com/hughr92/hugh_game" class="portfolio__viewButton">view repo</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- SKILLSET -->
+        <section class="section skills">
+            <div class="wrapper">
+                <h2 class="section__header">skills</h2>
+                <div class="skills__container">
+                    <!-- PROGRAMS -->
+                    <div class="skills__container--inner skills__container--programs">
+                        <h3 class="skills__container__title"><span>languages</span></h3>
+                        <!-- LIST OF SKILLS -->
+    
+                        
+                        <i class="skills__icon devicon-html5-plain"></i>
+                        <i class="skills__icon devicon-css3-plain"></i>
+                        <i class="skills__icon devicon-sass-original"></i>
+                        <i class="skills__icon devicon-javascript-plain"></i>
+                        <i class="skills__icon devicon-jquery-plain"></i>
+                        <i class="skills__icon devicon-react-original"></i>
+    
+                    </div>
+                    <!-- TOOLS -->
+                    <div class="skills__container--inner skills__container--tools">
+                        <h3 class="skills__container__title"><span>workflow</span></h3>
+                        <!-- LIST OF SKILLS -->
+                        <i class="skills__icon devicon-visualstudio-plain"></i>
+    
+                        <i class="skills__icon devicon-babel-plain"></i>
+                        <i class="skills__icon devicon-github-plain"></i>
+                        <i class="skills__icon devicon-gulp-plain"></i>
+                        
+                        <!-- firebase -->
+                        <img class="skills__icon--image" src="src/assets/icon-firebase-white.svg" alt="">
+                        <!-- images -->
+                        <!-- terminal -->
+                    </div>
+                    <!-- DESIGN -->
+                    <div class="skills__container--inner skills__container--design">
+                        <h3 class="skills__container__title"><span>design</span></h3>
+                        <!-- LIST OF SKILLS -->
+                        <!-- images -->
+                        <div class="icon__container">
+                            <img class="skills__icon--image" src="src/assets/icon-illustrator-white.svg" alt="">
+                            <img class="skills__icon--image" src="src/assets/icon-photoshop-white.svg" alt="">
+                            <img class="skills__icon--image" src="src/assets/icon-flash-white.svg" alt="">
+                            <img class="skills__icon--image" src="src/assets/icon-indesign-white.svg" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT -->
+        <section class="section contact">
+            <h2 class="section__header">Contact</h2>
+            <div class="wrapper">
+                <!-- FORM -->
+                <!-- http://www.focuspocus.io/magic/0e0d6305e7200b860f60c1466cbf9607 -->
+                <form action="mailto:hugh.m.rowland@gmail.com" method="post" enctype="text/plain" class="contact__form">
+                    <!-- NAME -->
+                    <div class="contact__form__container">
+                        <input minlength="3" required type="text" class="contact__form__input">
+                        <label for="name" class="contact__form__label">Name</label>
+                    </div>
+                    <!-- EMAIL -->
+                    <div class="contact__form__container">
+                        <input required type="email" class="contact__form__input">
+                        <label for="Email" class="contact__form__label">Email address</label>
+                    </div>
+                    <!-- MESSAGE -->
+                    <div class="contact__form__container">
+                        <input required type="text" class="contact__form__input contact__form__input--textarea">
+                        <label for="message" class="contact__form__label">Your message</label>
+                    </div>
+                    <input class=" contact__form__input--button" type="submit" value="submit">
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__links">
+                <a class="footer__links__item" target="_blank" href="https://github.com/hughr92/"><i class="fab fa-github"></i></a>
+                <a class="footer__links__item" target="_blank" href="https://www.linkedin.com/in/hrowland/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="footer__links__item" target="_blank" href="https://twitter.com/hughnasaur"><i class="fab fa-twitter"></i></a>
+                <a class="footer__links__item" target="_blank" href="https://medium.com/@hugh.m.rowland"><i class="fab fa-medium-m"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+        crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+    
     <script src="public/scripts/app.js"></script>
 </body>
 </html>

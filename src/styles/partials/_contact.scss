@@ -1,0 +1,58 @@
+.contact {
+    background-color: $primaryColorLight;
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        // border: 1px solid black;
+        background-color: #fff;
+        padding: 40px;
+        box-shadow: 5px 5px 5px #666;
+        &__container {
+            width: 100%;
+            margin: 20px 0;
+            position: relative;
+        }
+        &__label {
+            position: absolute;
+            top: -20px;
+            font-weight: 600;
+            color: $darkGrey;
+            font-size: 12px;
+        }
+        &__input {
+            width: 100%;
+            padding: 10px;
+            box-shadow: none;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid #838383;
+            background-color: none;
+            font-size: 1.2rem;
+            &--textarea {
+                // height: 200px;
+            }
+            &--button {
+                margin-top: 10px;
+                @extend %portfolioButton;
+            }
+            &:valid {
+                border-bottom: 2px solid #30b8b2;
+            }
+            
+            &:valid + label {
+                color: $primaryColor;
+            }
+        }
+    }
+}
+
+@media (max-width:450px){
+    .contact {
+        &__form {
+            padding: 30px 20px;
+        }
+    } 
+}

@@ -1,0 +1,189 @@
+.loader {
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    animation: finale 1s linear forwards 5s;
+    &__animation {
+        // background-color: $lightGrey;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        &__circle1{
+            width: 50vh;
+            height: 50vh;
+            max-width: 90vw;
+            max-height: 90vw;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            border: 2px solid black;
+            background-color: black;
+            border-radius: 50%;
+        }
+        &__logo {
+            width: 40vh;
+            height: 40vh;
+            max-width: 90vw;
+            max-height: 90vw;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            & path {
+                stroke: $logo;
+                fill: $logo;
+                stroke-dasharray: 2500;
+                opacity: 0;
+                animation: logo 4s linear forwards;
+            }
+            & rect {
+                stroke: $logo;
+                fill: $logo;
+                stroke-dasharray: 500;
+                opacity: 0;
+                animation: logo2 4s linear forwards;
+            }
+        }
+    }
+}
+
+
+.header {
+    position: relative;
+    &__hero {
+        position: absolute;
+        bottom: 20%;
+        &__header {
+            margin: 20px 0;
+            & span {
+
+                @extend %heroHeader;
+            }
+            &--black span {
+                background-color: black;
+                color: $primaryColorLight;
+            }
+        }
+    }
+    height: 100vh;
+    background: $primaryColor;
+    &__nav {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        top: 0;
+        background-color: white;
+        border-bottom: 4px solid $mediumGrey;
+        &__container {
+            position: relative;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+            & li {
+                list-style-type: none;
+                margin: 0 10px;
+            }
+        }
+        &__link {
+            color: $darkGrey;
+            text-decoration: none;
+            background: linear-gradient(to top, $primaryColor 50%, transparent 40%);
+            background-size: 100% 200%;
+            background-position: top;
+            padding: 8px 15px;
+            transition: .3s;
+            @extend %navLink;
+            &:hover {
+                background-position: bottom;
+                color: white;
+            }
+        }
+        &__logo {
+            position: absolute;
+            top: 10px;
+            left: 25px;
+            width: 42px;
+            height: 42px;
+            & path,
+            rect {
+                fill: $darkGrey;
+            }
+        }
+    }
+}
+
+// .header {
+//     height: 100vh;
+    
+//     &__fold {
+//         opacity: .5;
+//         height: 25vh;
+//         // border: 1px solid black;
+//         background: white;
+//         &:nth-last-of-type(2n){
+//             background: black
+//         }
+//     }
+// }
+
+// ANIMATION
+
+// FINALE
+@keyframes finale {
+    0% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    100% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 0%);
+    }
+}
+
+
+@keyframes logo {
+    0% {
+       opacity: 0;
+       fill: none;
+       stroke-dashoffset: 2500; 
+    }
+    60% {
+       opacity: 10;
+       fill: transparent;
+       stroke-dashoffset: 0; 
+    }
+    90% {
+       fill: white;
+    }
+    100% {
+        opacity: 10;
+        fill: white;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes logo2 {
+    0% {
+       opacity: 0;
+       fill: none;
+       stroke-dashoffset: 500; 
+    }
+    60% {
+       opacity: 10;
+       fill: transparent;
+       stroke-dashoffset: 0; 
+    }
+    90% {
+       fill: white;
+    }
+    100% {
+        opacity: 10;
+        fill: white;
+        stroke-dashoffset: 0;
+    }
+}

@@ -1,3 +1,21 @@
+// IMPORT MIXINS
+@import './partials/_setup.scss';
+@import './partials/_mixins.scss';
+
+// HEADER - NAVBAR
+@import './partials/_navbar.scss';
+@import './partials/_header.scss';
+
+// SECTIONS
+@import './partials/_about.scss';
+@import './partials/_portfolio.scss';
+@import './partials/_skills.scss';
+@import './partials/contact.scss';
+
+// FOOTER
+@import './partials/_footer.scss';
+
+
 body {
-    background: red;
+    background: $mediumGrey;
 }

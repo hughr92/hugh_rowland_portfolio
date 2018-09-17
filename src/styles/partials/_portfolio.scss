@@ -1,0 +1,176 @@
+.portfolio {
+    padding: 30px 0;
+    &:nth-of-type(2n) {
+        flex-direction: row-reverse;
+        background-color: $lightGrey;
+        text-align: right
+        
+    }
+    &__text {
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: $darkGrey;
+        &--team {
+            & span {
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $primaryColor;
+            }
+        }
+    }
+    // &__image {
+    //     position: relative;
+    //     width: 100%;
+    //     height: 300px;
+    //     background: url(../assets/mac-computer-screen-png-apple-mac-computer-screen-png-1122.png);
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+        
+    // }
+    &__slider {
+        width: 100%;
+        overflow: hidden;
+        & figure {
+            position: relative;
+            width: 500%;
+            animation: 30s splash infinite;
+        }
+        &__slide {
+            width: 20%;
+            float: left;
+            position: relative;
+            & img {
+                width: 100%;
+                float: left;
+            }
+            &__text {
+                position: absolute;
+            }
+        }
+    }
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &__half {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        // border: 1px solid black;
+        padding: 30px 40px;
+    }
+    &__icon {
+        width: 100%;
+        margin: 20px 0;
+        &__item {
+            color: $primaryColor;
+            font-size: 2.5rem;
+            margin: 0 2.5px;
+            &--image {
+                display: inline;
+                margin: 0 2.5px;
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+    background-color: white;
+    &__header {
+        @extend %portfolioHeader;
+        // &--left {
+        //     text-align: right;
+        // }
+    }
+    &__viewButton {
+        @extend %portfolioButton;
+        &__container {
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:750px){
+    .portfolio {
+        text-align: left;
+        flex-direction: column-reverse;
+        &:nth-of-type(2n) {
+            flex-direction: column-reverse;
+            background-color: $lightGrey;
+            text-align: left;    
+        }
+        &__half {
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width:450px){
+    .portfolio {
+    padding: 0px 0 20px;
+       &__half {
+           padding: 30px 20px;
+       } 
+    }
+}
+
+
+@keyframes splash {
+    0% {
+        left: 0%;
+    }
+    10% {
+        left: 0%;
+    }
+    12% {
+        left: -100%;
+    }
+    22% {
+        left: -100%;
+    }
+    24% {
+        left: -200%;
+    }
+    34% {
+        left: -200%;
+    }
+    36% {
+        left: -300%;
+    }
+    46% {
+        left: -300%;
+    }
+    48% {
+        left: -400%;
+    }
+    58% {
+        left: -400%;
+    }
+    60% {
+        left: -300%;
+    }
+    70% {
+        left: -300%;
+    }
+    72% {
+        left: -200%;
+    }
+    82% {
+        left: -200%;
+    }
+    84% {
+        left: -100%;
+    }
+    94% {
+        left: -100%;
+    }
+    96% {
+        left: 0%;
+    }
+    100% {
+        left: 0%;
+    }
+    
+}
