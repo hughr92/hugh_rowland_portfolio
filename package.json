@@ -4,7 +4,9 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +21,8 @@
     "gulp-notify": "^3.2.0",
     "gulp-sass": "^4.0.1",
     "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
-  }
+    "vinyl-source-stream": "^2.0.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
