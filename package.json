@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.0.1",
-    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-env": "^7.22.6",
     "babelify": "^10.0.0",
     "browser-sync": "^2.24.7",
     "browserify": "^16.2.2",
